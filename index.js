@@ -53,6 +53,7 @@ app.get('/creativeit', (req, res) => {
 
 // Routes
 app.post('/webhook/deduplicate', async (req, res) => {
+  console.log(req.body)
   let newID = "";
   const { propertyValue } = req.body;
   if (!propertyValue) {
