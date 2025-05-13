@@ -5,7 +5,7 @@ const axios = require('axios');
 const logger = require('./logger');  // Import the logger
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4400;
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
