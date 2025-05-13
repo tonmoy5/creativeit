@@ -53,9 +53,8 @@ app.get('/creativeit', (req, res) => {
 
 // Routes
 app.post('/webhook/deduplicate', async (req, res) => {
-  console.log(req.body)
   let newID = "";
-  const { propertyValue } = req.body;
+  const { propertyValue } = req.body[0];
   if (!propertyValue) {
     logger.error('propertyValue is required in the request body');
     return res.status(400).json({ error: 'propertyValue is required in the request body' });
