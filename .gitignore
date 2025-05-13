@@ -21,6 +21,6 @@ coverage/
 dist/
 
 # Ignore any other temporary files or folders
-# *.log
+*.log
 *.tmp
 *.swp
