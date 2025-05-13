@@ -47,6 +47,10 @@ app.get("/", async (req, res) => {
   res.send("Hello creativeit")
 })
 
+app.get('/creativeit', (req, res) => {
+  res.send("Hello from creativeit!");
+});
+
 // Routes
 app.post('/webhook/deduplicate', async (req, res) => {
   let newID = "";
