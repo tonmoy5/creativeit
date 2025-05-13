@@ -1,0 +1,26 @@
+# Node.js dependencies
+/node_modules/
+
+# Logs
+logs/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# npm package-lock file (optional, can be included in some cases)
+package-lock.json
+
+# Ignore coverage folder from test frameworks like Jest, Mocha, etc.
+coverage/
+
+# Ignore build folder for tools like Webpack, Babel, etc.
+dist/
+
+# Ignore any other temporary files or folders
+*.log
+*.tmp
+*.swp
