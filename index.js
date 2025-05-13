@@ -43,6 +43,10 @@ const mergeContacts = async (primaryContactId, secondaryContactId) => {
   }
 };
 
+app.get("/", async (req, res) => {
+  res.send("Hello creativeit")
+})
+
 // Routes
 app.post('/webhook/deduplicate', async (req, res) => {
   let newID = "";
