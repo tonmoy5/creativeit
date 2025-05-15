@@ -71,6 +71,15 @@ app.post('/webhook/deduplicate', async (req, res) => {
           {
             propertyName: 'phone',
             operator: 'CONTAINS_TOKEN',
+            value: propertyValue
+          }
+        ]
+      },
+      {
+        filters: [
+          {
+            propertyName: 'phone',
+            operator: 'CONTAINS_TOKEN',
             value: normalizedNumber
           }
         ]
