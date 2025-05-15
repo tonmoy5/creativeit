@@ -92,9 +92,9 @@ app.post('/webhook/deduplicate', async (req, res) => {
       {
         filters: [
           {
-            propertyName: 'hs_whatsapp_phone_number',
+            propertyName: 'phone',
             operator: 'CONTAINS_TOKEN',
-            value: normalizedNumber
+            value: "88" + normalizedNumber
           }
         ]
       },
