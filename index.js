@@ -15,6 +15,11 @@ const normalizePhoneNumber = (number) => {
   // Remove all non-digits
   let clean = number.replace(/\D/g, '');
 
+  // If the number starts with '880', remove the leading '88' (country code)
+  if (clean.startsWith('880')) {
+    clean = clean.slice(2); // Remove the first two characters ('88')
+  }
+
   return clean;
 };
 
