@@ -74,7 +74,7 @@ app.post('/webhook/deduplicate', async (req, res) => {
       {
         filters: [
           {
-            propertyName: 'phone',
+            propertyName: 'phone_number_',
             operator: 'CONTAINS_TOKEN',
             value: propertyValue
           }
@@ -83,7 +83,7 @@ app.post('/webhook/deduplicate', async (req, res) => {
       {
         filters: [
           {
-            propertyName: 'phone',
+            propertyName: 'phone_number_',
             operator: 'CONTAINS_TOKEN',
             value: normalizedNumber
           }
@@ -92,7 +92,7 @@ app.post('/webhook/deduplicate', async (req, res) => {
       {
         filters: [
           {
-            propertyName: 'phone',
+            propertyName: 'phone_number_',
             operator: 'CONTAINS_TOKEN',
             value: "88" + normalizedNumber
           }
@@ -119,6 +119,7 @@ app.post('/webhook/deduplicate', async (req, res) => {
     ],
     properties: [
       'phone',
+      'phone_number_',
       'firstname',
       'lastname',
       'email',
